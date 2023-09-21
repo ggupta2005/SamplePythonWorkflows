@@ -32,9 +32,9 @@ jobs:
       #   run: |
       #     pip install -e .
 
-      - name: Install test requirements
+      - name: Install pytest
         run: |
-          pip install -r requirements-test.txt
+          pip install pytest
 
       - name: Dump all installed packages
         run: |

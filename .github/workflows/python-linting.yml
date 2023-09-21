@@ -17,9 +17,10 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install linting dependencies
+      - name: Install flake8 and isort for linting
         run: |
-          pip install -r requirements-linting.txt
+          pip install flake8 isort
+
       - name: flake8
         run: flake8
 
